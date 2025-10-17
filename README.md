@@ -1,59 +1,107 @@
-# Counter
+# Angular Quick Refresh
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+## Project Overview
+This Angular project is designed as a comprehensive hands-on exercise to quickly reinforce and practice essential Angular concepts. It provides a structured environment to experiment with core features, including component interaction, forms, reactive programming, routing, HTTP requests, and state management. The goal is to accelerate learning by offering practical examples that cover both fundamental and intermediate Angular topics.
 
-## Development server
+The project is ideal for developers who want to **refresh Angular knowledge**, prepare for interviews, or gain confidence in building real-world applications with Angular’s modern best practices.
 
-To start a local development server, run:
+---
+
+## Key Features
+
+### Component Architecture
+- Demonstrates the creation of standalone and nested components.
+- Shows parent-child communication using `@Input` and `@Output`.
+- Uses `EventEmitter` to handle data flow between components efficiently.
+
+### Routing and Navigation
+- Implements Angular Router for multi-page navigation.
+- Uses `routerLink` and `routerLinkActive` for dynamic link highlighting.
+- Handles exact and partial route matching, including nested routes.
+
+### Forms
+- Covers **Template-driven forms** using `ngModel`.
+- Covers **Reactive forms** using `FormControl` and `FormGroup`.
+- Implements form validation, required fields, and dynamic form control updates.
+- Demonstrates capturing form submissions and preserving submitted data.
+
+### HTTP Client Integration
+- Connects to a mock REST API (`jsonplaceholder.typicode.com`) to perform CRUD operations.
+- Handles GET, POST, PUT, and DELETE requests using Angular `HttpClient`.
+- Demonstrates proper request handling and response processing.
+
+### State Management
+- Uses signals and local state for reactive UI updates.
+- Demonstrates how to store last submitted data and maintain UI consistency.
+
+### Event Handling and Lifecycle Hooks
+- Showcases Angular lifecycle hooks like `ngOnInit`, `ngAfterViewInit`, `ngDoCheck`, and `ngOnDestroy`.
+- Demonstrates how component initialization, updates, and destruction can be tracked and managed.
+
+### Styling and Dynamic Classes
+- Practical examples of CSS class binding, inline styles, and dynamic animations.
+- Implements conditional styling based on component state.
+
+---
+
+### Installation
+
+### Prerequisites
+- Node.js and npm installed
+- Angular CLI installed globally:  
+```bash
+npm install -g @angular/cli
+```
+## Steps
+### Clone the repository:
+
+```bash
+git clone [https://github.com/<your-username>/<repo-name>.git](https://github.com/kishore-144/angular-examples.git)
+```
+### Navigate into the project folder:
+
+```bash
+cd <repo-name>
+```
+### Install project dependencies:
+
+```bash
+npm install
+```
+## Usage
+### Start the development server:
 
 ```bash
 ng serve
 ```
+- Open your browser and navigate to:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```arduino
+http://localhost:4200
 ```
+### Interact with the components:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Navigate using the links to view different pages.
 
-```bash
-ng generate --help
-```
+- Fill forms to test reactive and template-driven form functionality.
 
-## Building
+- Observe HTTP operations with live CRUD requests.
 
-To build the project run:
+- Check console logs to see lifecycle hook outputs.
 
-```bash
-ng build
-```
+## Contribution
+This project is primarily intended for educational purposes. Contributions are welcome to:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Add new examples for advanced Angular concepts.
 
-## Running unit tests
+- Optimize existing components and services.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Improve documentation and readability.
 
-```bash
-ng test
-```
+- If contributing, please fork the repository, make your changes, and submit a pull request with clear descriptions.
 
-## Running end-to-end tests
+## License
+This repository is released for educational and learning purposes. Feel free to clone, modify, and use it to enhance your Angular skills. No commercial usage is implied.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Author
+Kishore B – ASP.NET eveloper focused on building practical, hands-on learning projects.
