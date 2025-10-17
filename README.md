@@ -1,11 +1,4 @@
 # Angular Quick Refresh
-![Angular](https://img.shields.io/badge/Angular-Angular%20Quick%20Refresh-red?logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript&logoColor=white)
-![RxJS](https://img.shields.io/badge/Reactive-RxJS-purple?logo=rxjs&logoColor=white)
-![HTML5](https://img.shields.io/badge/Markup-HTML5-orange?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/Styles-CSS3-blue?logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
-
 <p align="center">
   <img src="https://img.shields.io/badge/Angular-Angular%20Quick%20Refresh-red?logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript&logoColor=white" />
