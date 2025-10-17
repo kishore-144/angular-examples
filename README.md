@@ -56,7 +56,7 @@ npm install -g @angular/cli
 ### Clone the repository:
 
 ```bash
-git clone [https://github.com/<your-username>/<repo-name>.git](https://github.com/kishore-144/angular-examples.git)
+git clone https://github.com/<your-username>/<repo-name>.git
 ```
 ### Navigate into the project folder:
 
