@@ -51,7 +51,7 @@ The project is ideal for developers who want to **refresh Angular knowledge**, p
 
 ---
 
-### Installation
+## Installation
 
 ### Prerequisites
 - Node.js and npm installed
@@ -75,6 +75,9 @@ cd <repo-name>
 ```bash
 npm install
 ```
+
+---
+
 ## Usage
 ### Start the development server:
 
@@ -96,6 +99,8 @@ http://localhost:4200
 
 - Check console logs to see lifecycle hook outputs.
 
+---
+
 ## Contribution
 This project is primarily intended for educational purposes. Contributions are welcome to:
 
@@ -106,6 +111,8 @@ This project is primarily intended for educational purposes. Contributions are w
 - Improve documentation and readability.
 
 - If contributing, please fork the repository, make your changes, and submit a pull request with clear descriptions.
+
+---
 
 ## License
 This repository is released for educational and learning purposes. Feel free to clone, modify, and use it to enhance your Angular skills. No commercial usage is implied.
