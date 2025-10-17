@@ -1,0 +1,14 @@
+<h2>List</h2>
+<p>Reciever of Form</p>
+<ul>
+    @if(carNames2.length>0)
+    {    
+        <li *ngFor="let car of carNames2">
+            {{car}}
+        </li>
+    }
+    @else
+    {
+        <p>No Cars Available</p>
+    }
+</ul>

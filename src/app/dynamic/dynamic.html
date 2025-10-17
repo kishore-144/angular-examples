@@ -1,0 +1,17 @@
+<h1>Dynamic CSS</h1>
+<style>
+    .red{
+        color: red;
+    }
+    .big{
+        font-size: 2rem;
+    }
+</style>
+<h6>using ngClass</h6>
+<label>
+  <input type="checkbox" [(ngModel)]="reder"> Red
+</label>
+<label>
+  <input type="checkbox" [(ngModel)]="biger"> Big
+</label>
+<p [ngClass]="{'red':reder,'big':biger}">This is red and big text</p>

@@ -1,0 +1,32 @@
+<h2>Angular Directives</h2>
+<style>
+    ul,li{
+        list-style: none;
+    }
+    .evenItem{
+        background-color: lightgreen;
+    }
+    .oddItem{
+        background-color: lightblue;
+    }
+</style>
+<ul>
+  <li *ngFor="let movie of movies; let i = index">{{i + 1}}. {{ movie }}</li>
+</ul>
+<hr>
+<!-- first -->
+ <h5>ngFor</h5>
+<ul>
+  <li *ngFor="let movie of movies; let f = first; let l = last">
+    {{f?"first: "+movie:""}}
+    {{l?"last: "+movie:""}}
+  </li>
+</ul>
+<hr>
+<!-- ngClass -->
+ <h5>ngClass</h5>
+<ul>
+  <li style="padding-top: 5px; padding-bottom: 5x; text-align: center;" *ngFor="let movie of movies; let i = even; let j = odd" [ngClass]="{'evenItem': i, 'oddItem': j}">
+    {{ movie }}
+  </li>
+</ul>

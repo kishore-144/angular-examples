@@ -1,11 +1,10 @@
-main{
-    background-color: rgb(31, 36, 36);
-    color: white;
-    height: 100%;
-    width: 99.1vw;
-    margin: -10px;
-}
-button {
+<h2>Counter Using Signals</h2>
+<p>{{ counter() }}</p>
+<p>Doubled: {{ doublecounter() }}</p>
+<button (click)="clickedMe()">Add Button</button>
+<button (click)="decrease()">Decrease</button>
+<style>
+    button {
     background-color: skyblue; 
     height: 5%;
     width: 50%;
@@ -23,9 +22,4 @@ button {
     p {
         text-align: center;
     }
-    *{
-        font-family: monospace;
-    }
-    * input{
-        max-width: 250px;
-    }
+</style>

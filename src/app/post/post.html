@@ -1,0 +1,31 @@
+<h1>HTTP Requests</h1>
+<h2>Create Post</h2>
+<form (submit)="submitPost(); $event.preventDefault()">
+  <input type="text" placeholder="Title" [(ngModel)]="newPost.title" name="title">
+  <input type="text" placeholder="Body" [(ngModel)]="newPost.body" name="body">
+  <button type="submit">Create</button>
+</form>
+
+<h2>Posts</h2>
+<ul *ngIf="post.length > 0; else loading">
+  <li *ngFor="let p of post">
+    <!-- Edit mode -->
+    <div *ngIf="editPostId === p.id; else viewMode">
+      <label for="editTitle">Title: <input type="text" [(ngModel)]="editPostData.title" name="editTitle"></label>
+      <label for="editBody">Body: <input type="text" [(ngModel)]="editPostData.body" name="editBody"></label>
+      <button (click)="updatePost()">Save</button>
+      <button (click)="cancelEdit()">Cancel</button>
+    </div>
+
+    <ng-template #viewMode>
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.body }}</p>
+      <button (click)="startEdit(p)">Edit</button>
+      <button (click)="deletePost(p.id)">Delete</button>
+    </ng-template>
+  </li>
+</ul>
+
+<ng-template #loading>
+  <p>Loading data...</p>
+</ng-template>

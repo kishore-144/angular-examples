@@ -1,0 +1,26 @@
+button {
+    background-color: rgb(80, 136, 158); 
+    height: 5%;
+    width: 50%;
+    border-width: 1px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-left: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    button:hover {
+        background-color: rgb(92, 159, 185);
+        border-color: rgb(216, 127, 127);
+        border-width: 2px;
+        scale: 1.05;
+    }
+*{
+    align-self: justify;
+    justify-self: center;
+    align-items: center;
+}
+input{
+    width: 50%;
+    margin-left: 25%;
+}

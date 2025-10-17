@@ -1,0 +1,27 @@
+<H2>Routes and Navigations</H2>
+<p>Check app.routes.ts and also naver.css for changed contents</p>
+<nav>
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    |
+    <a routerLink="/about/1" routerLinkActive="active-link">About Us</a>
+    |
+    <a routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
+</nav>
+<br>
+router-outlet is the tag for showing navigated components
+<br>
+click the links to navigate
+<br><br>
+<h3>using default buttons to navigate</h3>
+<br>
+<button (click)="onClicked()">Goto Contact Us</button>
+<style>
+    nav a{
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    nav a:hover{
+        scale:1.1;
+    }
+</style>

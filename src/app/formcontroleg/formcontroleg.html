@@ -1,0 +1,26 @@
+<h2>Form Control Basics</h2>
+<label for="name">Name: <input type="text" [formControl]="name" name="name" id="name"></label>
+<p>Your name is: {{name.value}}</p>
+
+To change name as "Kishore", click the button:
+<button (click)="updateName()">Change Name</button>
+
+<br><br><br>
+<h2>Form Group Form Controls</h2>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label for="fname">First Name: <input type="text" formControlName="fname" name="fname" id="fname" required></label>
+    <br>
+    <label for="lname">Second Name: <input type="text" formControlName="lname" name="lname" id="lname" required></label>
+    <br>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+<p>Your full name is:
+  {{
+    profileForm.value.fname || profileForm.value.lname
+      ? ((profileForm.value.fname ? profileForm.value.fname : '') +
+         ' ' +
+         (profileForm.value.lname ? profileForm.value.lname : ''))
+      : submittedFullName
+  }}
+</p>
+
