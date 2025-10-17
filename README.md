@@ -6,6 +6,14 @@
 ![CSS3](https://img.shields.io/badge/Styles-CSS3-blue?logo=css3&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-Angular%20Quick%20Refresh-red?logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Reactive-RxJS-purple?logo=rxjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey" />
+</p>
+
+
 ## Project Overview
 This Angular project is designed as a comprehensive hands-on exercise to quickly reinforce and practice essential Angular concepts. It provides a structured environment to experiment with core features, including component interaction, forms, reactive programming, routing, HTTP requests, and state management. The goal is to accelerate learning by offering practical examples that cover both fundamental and intermediate Angular topics.
 
